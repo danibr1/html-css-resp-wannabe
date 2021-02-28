@@ -1,0 +1,135 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*######################################################## 
+CSS MEDIA QUERY - screeen < 420px
+#########################################################*/
+
+@media screen and (max-width: 419px){
+
+  /* GENERAL  */
+  *{
+    font-family: sans-serif;
+    font-size: 17px;
+  }
+  
+  h1{
+    font-size: 1.4rem;
+  }
+
+  img{
+    width: 50%;
+    height: 100%;
+  }
+
+  /* UTILITIES */
+  .container{
+    max-width: 100%;
+  }
+  .row{
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  /* LEZIONI */
+  #lezioni .row .left,
+  #lezioni .row .right{
+    float: none;
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+  }
+
+  /* STEPS */
+  #steps{
+    font-size: 0.8rem;
+  }
+
+  /* WHY */
+  hr{
+    margin: 30px 30%;
+  }
+
+  #why .row img {
+    width: 20%;
+    height: 100%;
+    padding: 15px;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third{
+    margin-top: 20px;
+  }
+}
