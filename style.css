@@ -76,60 +76,50 @@ img {
 CSS MEDIA QUERY - screeen < 420px
 #########################################################*/
 
-@media screen and (max-width: 419px){
 
-  /* GENERAL  */
+@media screen and (max-width: 419px){
   *{
-    font-family: sans-serif;
-    font-size: 17px;
+    box-sizing: border-box;
   }
-  
-  h1{
-    font-size: 1.4rem;
+
+  body{
+    margin: 0;
   }
 
   img{
-    width: 50%;
-    height: 100%;
+    height: 140px;
   }
 
-  /* UTILITIES */
-  .container{
-    max-width: 100%;
-  }
+
+  /* LAYOUT */
   .row{
-    max-width: 100%;
-    margin-top: 15px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 15px 25px;
   }
 
-  /* LEZIONI */
-  #lezioni .row .left,
-  #lezioni .row .right{
-    float: none;
-    display: block;
-    margin: 50px auto;
-    width: 80%;
+  /* LEZIONI / STEPS */
+  #lezioni .row>.left,
+  #lezioni .row>.right, 
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    margin-top: 35px;
   }
 
-  /* STEPS */
-  #steps{
-    font-size: 0.8rem;
-  }
 
   /* WHY */
-  hr{
-    margin: 30px 30%;
-  }
-
-  #why .row img {
-    width: 20%;
-    height: 100%;
-    padding: 15px;
-  }
-
   #why .row > .first,
   #why .row > .second,
-  #why .row > .third{
-    margin-top: 20px;
+  #why .row > .third {
+      margin-top: 30px;
+  }
+
+  #why {
+    text-align: center;
+    background-color: #caf283;
   }
 }
+
+  
